@@ -17,7 +17,7 @@
                 <h2 th:text="${task.title}"></h2>
                 <p th:text="${task.description}"></p>
                 <div class="actions">
-                    <form th:action="@{'/task/{id}'(id=${task.id})}" th:method="delete">.
+                    <form th:action="@{'/task/{id}'(id=${task.id})}" th:method="delete">
                         <button class="btn-red">Apagar</button>
                     </form>
                 </div>
